@@ -2,6 +2,10 @@
 # coding=utf-8
 import sys
 
+#find result
+
+import sys
+
 count = 0.0
 current_key = -1
 Pt_sum = 0
@@ -26,9 +30,13 @@ for line in sys.stdin:
 
 print("{0},{1},{2}".format(key,len(event_files),Pt_sum/count))
 
-#"{0}\t{1},{2}".format(data[0],data[1],data[2])
+#INPUT:
 """
+key - 
 0 - antiNucleus INT
+value - 
 1 - eventFile UINT
 2 - Pt  FLOAT
 """
+#OUTPUT:
+# antiNucleus, number of eventFiles, mean of Pt

@@ -3,14 +3,14 @@
 import sys
 
 
-# filter and move all_data to one reduce
-# we get columns: 10(time),0,1,11
+# just get antiNucleus and prodTime to find mean
+# we get columns: 0(antiNucleus), 10(time)
 
 for line in sys.stdin:
-    data = line.split(',')
-    data = line.split(',')  
-    print("{0}\t{1}\t{2},{3}".format(data[0],data[10],data[1],data[11]))
-    
+    data = line.split(',') 
+    print("{0}\t{1}".format(data[0],data[10]))
+   
+#INPUT 
 """
 0 - antiNucleus INT
 1 - eventFile UINT
@@ -29,3 +29,6 @@ for line in sys.stdin:
 14 - vertexY  FLOAT
 15 - vertexZ  FLOAT
 """
+#OUTPUT 
+#key - antiNucleus
+#value - prodTime
