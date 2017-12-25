@@ -3,7 +3,7 @@
 import sys
 
 
-# filter and move all_data to one reduce
+# filter and move data to reducers
 # we output columns: 0,1,11 (antiNucleus, eventFile, Pt)
 
 file_name = 'part-00000'
